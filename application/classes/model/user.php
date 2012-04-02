@@ -1,0 +1,90 @@
+<?php defined('APPPATH') or die('No direct script access.');
+
+#
+# Twui
+# Copyright (C) 2012  Thomas Chemineau <thomas.chemineau@gmail.com>
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program. If not, see <http://www.gnu.org/licenses/>.
+#
+
+/**
+ * Model to manage a user.
+ */
+class Model_User extends Model
+{
+
+	/**
+	 * Add a particular user.
+	 * @param $user A user identifier
+	 * @param $data User data
+	 * @return boolean
+	 */
+	public function add ( $user, $data )
+	{
+		return false;
+	}
+
+	/**
+	 * Authenticate a particular user.
+	 * @param $user A user identifier
+	 * @param $password A password
+	 * @return boolean
+	 */
+	public function authenticate ( $user, $password )
+	{
+		return true;
+	}
+
+	/**
+	 * Delete a particular user.
+	 * @param $user A user identifier
+	 * @return boolean
+	 */
+	public function delete ( $user )
+	{
+		return false;
+	}
+
+	/**
+	 * Retrieve a particular user.
+	 * @param $user A user identifier
+	 * @return Array
+	 */
+	public function get ( $user )
+	{
+		return array();
+	}
+
+	/**
+	 * Get a list of all users.
+	 * @return array
+	 */
+	public function get_all ()
+	{
+	}
+
+	/**
+	 * Get or a set a password to a particular user.
+	 * @param $user A user identifier
+	 * @param $password A password (optional)
+	 * @param $random Generate a random password if $password is null
+	 * @return string|boolean
+	 */
+	public function password ( $user, $password = null, $random = false )
+	{
+		return null;
+	}
+
+}
+
